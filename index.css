@@ -47,6 +47,7 @@
     --color-instagram:#DD2A7B;
     --color-facebook:#3B5998;
     --color-yellow:#fff198;  
+    --color-disabled:#aaa;
 }
 
 *{
@@ -60,6 +61,12 @@ body{
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
+
+.version{
+    color:var(--color-disabled);
+    font-size:20px;
+}
+
 
 #twitter{
     color: var(--color-twitter);
@@ -77,13 +84,19 @@ body{
     color: var(--color-facebook);
 }
 
+ion-icon{
+    position:relative;
+    font-size:50px;
+    cursor: pointer;
+}
+
 /*=================GENERALS===================*/
 a{
     text-decoration:none;
 }
 
 .logo_text{
-    font-size:20px;
+    font-size:30px;
     color:var(--color-white)
 }
 
@@ -120,7 +133,7 @@ a{
 /*========================FIRST SECTION=================*/
 
 .big_top_image{
-    background-image: url("./images/pills.jpg");
+    background-image: url("pills.jpg");
     z-index: 0; /* Change the z-index value to 0 or a positive value */
     position: absolute;
     background-repeat: no-repeat;
@@ -163,7 +176,7 @@ nav{
     margin:auto;
     display: flex;
     flex-direction: column;
-    gap:20px;
+    gap:60px;
 }
 
 .middle section{
@@ -176,7 +189,7 @@ nav{
 }
 
 .middle section a{
-    width:100%;
+    width:20rem;
     padding:20px;
     font-size:25px;
 }
@@ -187,18 +200,25 @@ nav{
     position:relative;
     top:10px;
     text-align: center;
-    padding:40px 0;
+    padding:70px 0;
 
 
 }
 
 #about_us_p{
-    font-size:25px;
+    font-size:35px;
 }
 
 #about_logo{
+    position:relative;
+    top:-20px;
     font-size:120px;
+    margin-bottom:20px;
 
+}
+
+.upper_about p{
+    font-size:25px;
 }
 
 
@@ -208,7 +228,7 @@ nav{
 }
 
 .upper_about section{
-    height: 2rem;
+    height: 5rem;
     align-items: center;
     display: flex;
     flex-direction: row;
@@ -228,6 +248,114 @@ nav{
     flex-direction: column;
     text-align: center;
     justify-content: center;
+}
+
+.footer .first_section{
+    display:none;
+}
+
+@media screen and (min-width:600px){
+
+    nav{
+        justify-content: space-between;
+        padding:10px 50px;
+        height: 7rem;
+    }
+
+    #upper_login{
+        display: block;
+        padding:20px 40px;
+    }
+
+    .logo_text{
+        font-size:40px;
+    }
+
+    .motivational_text{
+        font-size:40px;
+    }
+
+
+    .middle{
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        top:17rem;
+    }
+
+    .middle section a{
+        padding:15px;
+        width:15rem;
+    }
+
+    .about_us{
+        display: flex;
+        flex-direction: row;
+        gap:20px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    #about_logo{
+        margin-left:40px;
+        font-size:150px;
+    }
+
+    #about_us_p{
+        font-size:40px;
+    }
+
+    .upper_about{
+        width:60%;
+        padding:50px 0;
+    }
+
+    .upper_about p{
+        font-size:25px;
+    }
+
+    .footer{
+        padding:40px 0;
+    }
+
+    .footer section{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer a{
+        font-size:20px;
+    }
+
+
+}
+
+@media screen and (min-width:1000px){
+
+    .motivational_text{
+        font-size:50px;
+    }
+    .middle{
+        top:15rem;
+    }
+
+    .middle section{
+        flex-direction: row;
+    }
+
+    #about_logo{
+        margin-left:5rem;
+        font-size:200px;
+    }
+
+    .footer .first_section{
+        display: flex;
+    }
+
+    
+
 }
 
 
