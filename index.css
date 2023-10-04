@@ -250,9 +250,7 @@ nav{
     justify-content: center;
 }
 
-.footer .first_section{
-    display:none;
-}
+
 
 @media screen and (min-width:600px){
 
@@ -318,12 +316,6 @@ nav{
         padding:40px 0;
     }
 
-    .footer section{
-        display: flex;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-    }
 
     .footer a{
         font-size:20px;
@@ -350,8 +342,11 @@ nav{
         font-size:200px;
     }
 
-    .footer .first_section{
+    .footer section{
         display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
     }
 
     
