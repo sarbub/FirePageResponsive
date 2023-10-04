@@ -1,0 +1,241 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+
+
+/*=============================ANIMAITONS==========*/
+
+
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+
+  .animated-text{
+    opacity: 0; /* Set initial opacity to 0 */
+    animation: fadeIn 1s ease-in-out forwards; /* Apply the fadeIn animation */
+  }
+
+
+
+:root{
+
+    --color-white:#fff;
+
+
+    /*=================THIRD ONE=================*/
+
+    --background-color-third: rgb(255, 255, 255);
+    --color-primary-third: #86a376;
+    --color-white-third:#fff;
+    --color-accent-third:#e01d1d;
+    --color-buttons-third:#429ef3;
+    --btn-radius:10px;
+    --btn-text-size:18px;
+    --color-firepage-third:#1c1c1c;
+    --color-tiktok:#1c1c1c;
+    --color-twitter:#1DA1F2;
+    --color-instagram:#DD2A7B;
+    --color-facebook:#3B5998;
+    --color-yellow:#fff198;  
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+#twitter{
+    color: var(--color-twitter);
+}
+
+#tiktok{
+    color:var(--color-tiktok)
+}
+
+#instagram{
+    color:var(--color-instagram)
+}
+
+#facebook{
+    color: var(--color-facebook);
+}
+
+/*=================GENERALS===================*/
+a{
+    text-decoration:none;
+}
+
+.logo_text{
+    font-size:20px;
+    color:var(--color-white)
+}
+
+.blue_btn{
+    background-color: var(--color-buttons-third);
+    border-radius:10px;
+    border:none;
+    font-size:10px;
+    color:var(--color-white);
+    padding:10px 20px;
+}
+
+.btn:hover{
+    opacity:0.8;
+}
+
+.white_btn{
+    border:2px solid var(--color-white);
+    border-radius:10px;
+    font-size:10px;
+    color:var(--color-white);
+    padding:10px 20px;
+}
+
+
+
+.motivational_text{
+    font-size:30px;
+    color:var(--color-white);
+}
+
+
+
+/*========================FIRST SECTION=================*/
+
+.big_top_image{
+    background-image: url("./images/pills.jpg");
+    z-index: 0; /* Change the z-index value to 0 or a positive value */
+    position: absolute;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 90vh;
+    max-height: 90vh;
+    background-size: cover;
+}
+
+.first_section{
+    height: 90vh;
+}
+
+
+/*----------------NAVIGATION---------------*/
+
+nav{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    padding:10px 50px;
+    height: 5rem;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background: transparent;
+}
+
+#upper_login{
+    display: none;
+}
+
+.middle{
+    position:relative;
+    top:10rem;
+    width:80%;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+.middle section{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    text-align: center;
+    align-items: center;
+    gap:20px;
+}
+
+.middle section a{
+    width:100%;
+    padding:20px;
+    font-size:25px;
+}
+
+/*--------------ABOUT SECTION-----*/
+
+.about_us{
+    position:relative;
+    top:10px;
+    text-align: center;
+    padding:40px 0;
+
+
+}
+
+#about_us_p{
+    font-size:25px;
+}
+
+#about_logo{
+    font-size:120px;
+
+}
+
+
+.upper_about{
+    width:90%;
+    margin:auto;
+}
+
+.upper_about section{
+    height: 2rem;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+}
+
+
+.footer{
+    background-color: var(--color-yellow);
+    position:relative;
+    top:10px;
+    height: 13rem;;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+

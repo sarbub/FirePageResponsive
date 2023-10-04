@@ -1,0 +1,166 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+
+  .animated-text{
+    opacity: 0; /* Set initial opacity to 0 */
+    animation: fadeIn 1s ease-in-out forwards; /* Apply the fadeIn animation */
+  }
+
+
+:root{
+    --btn-radius:10px;
+    --color-tiktok:#1c1c1c;
+    --color-white:#fff;
+    --color-buttons-third:#429ef3;
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn-primary{
+    border-radius:var(--btn-radius);
+    border:none;
+    background: var(--color-buttons-third);
+    color:var(--color-white);
+    font-size:var(--btn-text-size);
+    cursor: pointer;
+}
+
+
+
+.btn{
+    padding:10px 20px;
+    
+}
+
+.btn:hover{
+    opacity: 0.8;
+}
+a{
+    text-decoration: none;
+}
+
+
+/*===============================NAVIGATION===================*/
+
+.nav {
+    position: fixed; /* Set the position to fixed */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:10px 50px;
+    height: 7rem;
+    top: 0; /* Stick it to the top */
+    left: 0; /* Align it to the left */
+    right: 0; /* Align it to the right */
+    z-index: 1;
+    background: transparent; /* Initially, make it transparent */
+
+}
+
+
+.primary-text{
+    font-size:40px;
+    font-weight:500;
+    cursor: pointer;
+    color:var(--color-white);
+}
+
+
+.btn{
+    padding:10px 20px;
+}
+
+.main{
+    padding: 10px 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 90vh;
+    background-image: url("./images/second_pills.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    gap: 250px;
+}
+
+.main input{
+    font-family: 'Poppins', sans-serif;
+}
+
+.motivational{
+    font-size:50px;
+    color:var(--color-white);
+    font-weight:600;
+}
+
+.p{
+    margin-top:10px;
+    text-align: center;
+    font-size:15px;
+}
+
+
+ion-icon{
+    color:var(--color-buttons-third);
+    font-size:100px;
+    
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-white);
+    padding: 20px;
+    border-radius:10px;
+    width:60%;
+    height:70%;
+    justify-content: center;
+}
+
+.form input{
+    border:none;
+    font-size:15px;
+    outline: none;
+    margin-top:30px;
+    font-weight: 600;
+}
+
+.form section{
+    display:flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+form a{
+    color: var(--color-buttons-third);
+}
+
+b{
+    color:var(--color-buttons-third);
+}
+
+
+
+
+
