@@ -37,27 +37,53 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
-.btn-primary{
-    border-radius:var(--btn-radius);
-    border:none;
-    background: var(--color-buttons-third);
-    color:var(--color-white);
-    font-size:var(--btn-text-size);
-    cursor: pointer;
-}
-
-
-
-.btn{
-    padding:10px 20px;
-    
-}
-
 .btn:hover{
     opacity: 0.8;
 }
 a{
     text-decoration: none;
+}
+
+.image_container{
+    background-image: url("second_pills.jpg");
+    z-index: 0; /* Change the z-index value to 0 or a positive value */
+    position: absolute;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 130vh;
+    max-height: 100vh;
+    background-size: cover;
+}
+
+.motivational{
+    color:var(--color-white);
+    font-size:40px;
+}
+
+.logo_text{
+    font-size:30px;
+    color:var(--color-white);
+
+}
+
+.blue_btn{
+    background-color: var(--color-buttons-third);
+    border-radius:10px;
+    border:none;
+    font-size:20px;
+    color:var(--color-white);
+    padding:10px 20px;
+}
+
+.red_btn{
+    border-radius:10px;
+    border:none;
+    font-size:20px;
+    color:var(--color-tiktok);
+    padding:15px 25px;
+    border:2px solid var(--color-tiktok);
+    background-color: var(--color-white);
+    font-weight: 800;
 }
 
 
@@ -67,97 +93,76 @@ a{
     position: fixed; /* Set the position to fixed */
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding:10px 50px;
-    height: 7rem;
+    height: 5rem;
     top: 0; /* Stick it to the top */
     left: 0; /* Align it to the left */
     right: 0; /* Align it to the right */
     z-index: 1;
     background: transparent; /* Initially, make it transparent */
-
 }
 
-
-.primary-text{
-    font-size:40px;
-    font-weight:500;
-    cursor: pointer;
-    color:var(--color-white);
-}
-
-
-.btn{
-    padding:10px 20px;
+#upper_login{
+    display:none;
 }
 
 .main{
-    padding: 10px 15rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    height: 90vh;
-    background-image: url("./images/second_pills.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    gap: 250px;
-}
-
-.main input{
-    font-family: 'Poppins', sans-serif;
-}
-
-.motivational{
-    font-size:50px;
-    color:var(--color-white);
-    font-weight:600;
-}
-
-.p{
-    margin-top:10px;
+    position:relative;
+    top:5rem;
     text-align: center;
-    font-size:15px;
+    justify-content: center;
+    align-items: center;
 }
 
 
-ion-icon{
-    color:var(--color-buttons-third);
-    font-size:100px;
-    
-}
+
+/*------------------FORM------------------------*/
 
 .form{
     display: flex;
+    margin:auto;
     flex-direction: column;
-    background-color: var(--color-white);
-    padding: 20px;
-    border-radius:10px;
-    width:60%;
-    height:70%;
-    justify-content: center;
-}
-
-.form input{
-    border:none;
-    font-size:15px;
-    outline: none;
-    margin-top:30px;
-    font-weight: 600;
-}
-
-.form section{
-    display:flex;
+    text-align:center;
+    padding:10px;
+    border-radius: 10px;
     text-align: center;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    background-color: var(--color-white);
+    gap:15px;
+    width:90%;
+    height:30rem;
+    overflow: hidden;
 }
 
-form a{
-    color: var(--color-buttons-third);
+.form input {
+    width: 10rem;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-size:100;
+    margin-top:10px;
 }
 
-b{
+.already_have_account_p{
+    font-size:15px;
+    color:var(--color-tiktok);
+}
+
+.form button{
+    padding:20px;
+    margin-top:20px;
+    width:8rem;
+}
+
+form ion-icon{
     color:var(--color-buttons-third);
+    font-size:60px;
+}
+
+.form .a {
+    color:red;
 }
 
 

@@ -97,7 +97,7 @@ a{
 
 .logo_text{
     font-size:30px;
-    color:var(--color-white)
+    color:var(--color-white);
 }
 
 .blue_btn{
@@ -107,6 +107,7 @@ a{
     font-size:10px;
     color:var(--color-white);
     padding:10px 20px;
+    font-weight: 800px;
 }
 
 .btn:hover{
