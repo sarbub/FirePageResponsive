@@ -68,7 +68,7 @@ body{
 
 .version{
     color:var(--color-disabled);
-    font-size:20px;
+    font-size:15px;
 }
 
 
@@ -90,7 +90,7 @@ body{
 
 ion-icon{
     position:relative;
-    font-size:50px;
+    font-size:30px;
     cursor: pointer;
 }
 

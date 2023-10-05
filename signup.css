@@ -27,6 +27,9 @@
     --color-buttons-third:#429ef3;
     --color-yellow:#fff19c;
     --color-red:#fd5234;
+    --color-twitter:#1DA1F2;
+    --color-instagram:#DD2A7B;
+    --color-facebook:#3B5998;
 }
 
 *{
@@ -132,17 +135,25 @@ section{
     display: flex;
     margin:auto;
     flex-direction: column;
-    text-align:center;
     padding:10px;
     border-radius: 10px;
-    text-align: center;
     justify-content: center;
-    align-items: center;
     background-color: var(--color-white);
     gap:15px;
     width:20rem;
     height:30rem;
     overflow: hidden;
+}
+
+#form_btn_section{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+#form_btn_section a{
+    width:15rem;
+    margin:auto
 }
 
 .form input {
@@ -152,6 +163,7 @@ section{
     font-size: 20px;
     font-size:100;
     margin-top:10px;
+    margin-left: 2rem;
 }
 
 .already_have_account_p{
@@ -159,11 +171,6 @@ section{
     color:var(--color-tiktok);
 }
 
-.form button{
-    padding:20px;
-    margin-top:20px;
-    width:8rem;
-}
 
 form ion-icon{
     color:var(--color-buttons-third);
@@ -174,13 +181,65 @@ form ion-icon{
     color:red;
 }
 
+
+/*========================FOOTER=======================*/
+
+.footer{
+    background-color: var(--color-yellow);
+    position:relative;
+    top:10px;
+    height: 13rem;;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin-top:50px;
+}
+
+
+ion-icon{
+    position:relative;
+    font-size:30px;
+    cursor: pointer;
+}
+
+ #logo_section{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding:10px;
+}
+
+
+.version{
+    color:var(--color-disabled);
+    font-size:15px;
+}
+
+
+#twitter{
+    color: var(--color-twitter);
+}
+
+#tiktok{
+    color:var(--color-tiktok)
+}
+
+#instagram{
+    color:var(--color-instagram)
+}
+
+#facebook{
+    color: var(--color-facebook);
+}
+
 @media screen and (min-width:850px){
-
-
-
-
+    .footer{
+        margin-top:180px;
+    }
     .motivational{
-        width:18rem;
+        width:30rem;
+        font-size:60px;
     }
     .main{
         display: flex;
