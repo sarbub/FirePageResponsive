@@ -99,7 +99,7 @@ section{
 
 .nav {
     position: fixed; /* Set the position to fixed */
-    display: none;
+    display: flex;
     align-items: center;
     justify-content: center;
     padding:10px 50px;
@@ -176,9 +176,6 @@ form ion-icon{
 
 @media screen and (min-width:850px){
 
-    .nav{
-        display: flex;
-    }
 
 
 
