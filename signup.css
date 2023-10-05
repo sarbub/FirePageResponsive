@@ -37,6 +37,9 @@
 
 body{
     font-family: 'Poppins', sans-serif;
+    background-image:url("second_pills.jpg");
+    background-position: center center;
+
 }
 
 .btn:hover{
@@ -46,17 +49,7 @@ a{
     text-decoration: none;
 }
 
-.image_container{
-    background-image: url("second_pills.jpg");
-    z-index: 0; /* Change the z-index value to 0 or a positive value */
-    position: absolute;
-    background-repeat: no-repeat;
-    width: 100%;
-    min-height: 160vh;
-    max-height: 160vh;
-    background-size: cover;
-    background-position: center -100px;
-}
+
 
 .motivational{
     color:var(--color-white);
@@ -87,14 +80,13 @@ a{
 }
 
 .black_btn{
+    background-color: var(--color-white);
     border-radius:10px;
     border:none;
     font-size:20px;
-    color:var(--color-tiktok);
-    padding:15px 25px;
-    border:2px solid var(--color-tiktok);
-    background-color: var(--color-white);
-    font-weight: 800;
+    color:var(--color-buttons-third);
+    padding:15px 30px;
+    border:2px solid var(--color-buttons-third)
 }
 
 section{
@@ -129,6 +121,7 @@ section{
     text-align: center;
     justify-content: center;
     align-items: center;
+    padding:50px 0;
 }
 
 
