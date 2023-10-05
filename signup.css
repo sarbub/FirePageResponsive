@@ -25,6 +25,8 @@
     --color-tiktok:#1c1c1c;
     --color-white:#fff;
     --color-buttons-third:#429ef3;
+    --color-yellow:#fff19c;
+    --color-red:#fd5234;
 }
 
 *{
@@ -50,14 +52,23 @@ a{
     position: absolute;
     background-repeat: no-repeat;
     width: 100%;
-    min-height: 130vh;
-    max-height: 100vh;
+    min-height: 160vh;
+    max-height: 160vh;
     background-size: cover;
+    background-position: center -100px;
 }
 
 .motivational{
     color:var(--color-white);
     font-size:40px;
+    font-weight: 800;
+    width:80%;
+    margin:auto;
+    padding:40px 0;
+}
+
+.motivational b{
+    color:var(--color-buttons-third);
 }
 
 .logo_text{
@@ -75,7 +86,7 @@ a{
     padding:10px 20px;
 }
 
-.red_btn{
+.black_btn{
     border-radius:10px;
     border:none;
     font-size:20px;
@@ -131,7 +142,7 @@ a{
     align-items: center;
     background-color: var(--color-white);
     gap:15px;
-    width:90%;
+    width:20rem;
     height:30rem;
     overflow: hidden;
 }
@@ -163,6 +174,24 @@ form ion-icon{
 
 .form .a {
     color:red;
+}
+
+@media screen and (min-width:850px){
+
+
+
+    .motivational{
+        width:18rem;
+    }
+    .main{
+        display: flex;
+        position:relative;
+        top:10rem;
+        padding:40px;
+        justify-content: space-around;
+
+
+    }
 }
 
 
