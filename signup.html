@@ -52,18 +52,7 @@ window.addEventListener("scroll", () => {
 
   header.style.filter = `blur(${window.scrollY / 100}px)`;
 
-  // Function to disable screen rotation
-function disableRotation() {
-  if (window.orientation !== 0) {
-    alert("Please rotate your device back to the default orientation.");
-  }
-}
 
-// Attach an event listener to detect orientation changes
-//window.addEventListener("orientationchange", disableRotation);
-
-// Call the function initially to check the orientation on page load
-//disableRotation();
 
 });
 
