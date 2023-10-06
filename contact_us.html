@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
 </head>
 <style>
 
@@ -21,42 +22,258 @@
     box-sizing: border-box;
 }
 
-    .main{
-        width: 100%;
-        height: 100vh;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
+:root{
+
+--color-white:#fff;
+
+
+/*=================THIRD ONE=================*/
+
+--background-color-third: rgb(255, 255, 255);
+--color-primary-third: #86a376;
+--color-white-third:#fff;
+--color-accent-third:#e01d1d;
+--color-buttons-third:#429ef3;
+--btn-radius:10px;
+--btn-text-size:18px;
+--color-firepage-third:#1c1c1c;
+--color-tiktok:#1c1c1c;
+--color-twitter:#1DA1F2;
+--color-instagram:#DD2A7B;
+--color-facebook:#3B5998;
+--color-yellow:#fff198;  
+--color-disabled:#aaa;
+}
+
+.upper{
+    background-image:url("computer.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center center;
+    width:100%;
+    height:60vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap:30px;
+}
+
+a{
+    text-decoration: none;
+    font-size:30px;
+    cursor: pointer;
+}
+
+.home{
+    border-radius: 15px;
+    padding:12px 90px;
+    background-color: #fff;
+    color:#1c1c1c;
+    border:none;
+}
+
+.phone_number{
+    border-radius: 15px;
+    padding:10px 50px;
+    color:#fff;
+    border:2px solid #FFF;
+}
+
+button:hover,a:hover{
+    opacity:0.5;
+}
+
+.form_div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding:10px;
+
+}
+
+.form_div form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding:10px;
+}
+
+textarea{
+    min-height:8rem;
+    min-width:20rem;
+    max-width:20rem;
+    max-height:8rem;  
+    font-size:25px; 
+}
+
+form input{
+    height:3rem;
+    padding:0 5px;
+    font-size:25px;
+    outline: none;
+}
+
+button{
+    height:3rem;
+    font-size:25px;
+    background-color: #fff;
+    color:#1c1c1c;
+    border:2px solid #1c1c1c;
+}
+
+.message {
+    position:absolute;
+    top:18rem;
+    font-size: 20px;
+    color:#fff;
+    z-index: 2;
+
+}
+.form_div ion-icon{
+    color:#1c1c1c;
+    font-size:15rem;
+    z-index: 20;
+    margin:auto;
+    padding:30px 10px;
+
+    
+}
+
+/*-----------------------FOOTER SECTION---------------------*/
+
+
+.footer{
+    background-color: var(--color-yellow);
+    position:relative;
+    top:10px;
+    height: 13rem;;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.footer section{
         display: flex;
         flex-direction: column;
-        padding:10px;
-        background-color: #d1cfcf;
-        }
-    p{
-        color:#fff;
-        font-size:30px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
     }
 
-    a{
-        text-decoration: none;
-        color:#d1cfcf;
-        background-color: #fff;
-        padding:10px 20px;
-        border-radius: 10px;
-        border:none;
-        position: relative;
-        top:30px;
-        margin-bottom:20px;
+    #logo_section{
+        display: flex;
+        flex-direction: row;
     }
+
+    .footer a {
+        display: flex;
+        
+    }
+
+@media screen and (min-width:1000px){
+    .upper{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .form_div{
+        padding:10px 50px;
+        display: flex;
+        flex-direction: row;
+        width:80%;
+        margin:auto;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+
+    
+
+
+}
+
+
+
+
+
+
+
+
+
 </style>
 <body>
     <div class="main">
-        <p>
-            We're hard at work enhancing your experience! This section is currently under
-             construction and will be available soon. Thank you for your patience and understanding
-              as we strive to bring you the best service possible. In the meantime, feel free to explore the rest of our platform!
-        </p>
-        <a href="index.html">home</a>
+        <div class="upper">
+            <a href="index.html" class="home">Home</a>
+            <a class="phone_number">0738476561</a>
+            <div class="message"></div>
+        </div>
+        <div class="form_div">
+            <ion-icon name="people"></ion-icon>
+            <form action="">
+                <input type="text" placeholder="Name">
+                <input type="text" placeholder="Email">
+                <textarea name=""  class="text_area"></textarea>
+                <button type="">submit</button>
+            </form>
+        </div>
     </div>
+    <div class="footer">
+        <section id ="first_footer_section">
+          <p>follow us on:</p>
+          <section id="logo_section">
+            <ion-icon name="logo-instagram" id="instagram" data-aos="flip-up"></ion-icon>
+            <ion-icon name="logo-facebook" id="facebook" data-aos="flip-up"></ion-icon>
+            <ion-icon name="logo-twitter" id="twitter" data-aos="flip-up"></ion-icon>
+            <ion-icon name="logo-tiktok" id="tiktok" data-aos="flip-up"></ion-icon>
+          </section>
+         <section class="term_section">
+          <a href="terms_of_use.html">Terms of use </a>
+          <a href="policy.html">Privacy Policy</a>
+         </section>
+        </section>
+        <p class="version">Version  1.0</p>
+    
+      </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script>
+        document.querySelector(".phone_number").addEventListener("click", function() {
+  // Create a temporary input element
+  var tempInput = document.createElement("input");
+  tempInput.value = "0738476561";
+
+  // Append the input element to the document
+  document.body.appendChild(tempInput);
+
+  // Select the text in the input element
+  tempInput.select();
+
+  // Copy the selected text to the clipboard
+  document.execCommand("copy");
+
+  // Remove the temporary input element
+  document.body.removeChild(tempInput);
+
+  var messageElement = document.querySelector(".message");
+  messageElement.textContent = "copied";
+
+  // Set a timer to hide the message after 1 second (1000 milliseconds)
+  setTimeout(function() {
+    messageElement.textContent = "";
+  }, 1000);
+});
+
+    </script>
+
 </body>
 </html>

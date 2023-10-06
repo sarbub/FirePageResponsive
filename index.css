@@ -350,12 +350,34 @@ nav{
         font-size:200px;
     }
 
+    /*=============================FOOTER SECTION===================*/
     .footer section{
         display: flex;
+        flex-direction: column;
         text-align: center;
         justify-content: center;
         align-items: center;
     }
+
+    #logo_section{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .footer a {
+        display: flex;
+        
+    }
+
+    .term_section{
+        display:flex;
+        flex-direction: row !important;
+        padding:10px;
+        gap:10px;
+    }
+
+
+
 
     
 
