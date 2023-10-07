@@ -36,7 +36,7 @@
 
     --color-primary-third: #c480d6;
     --color-white-third:#fff;
-    --color-accent-third:#e01d1d;
+    --color-accent-third:#f47169;
     --color-buttons-third:#429ef3;
     --btn-radius:10px;
     --btn-text-size:18px;
@@ -132,6 +132,11 @@ a{
     font-size:35px;
     color:var(--color-white);
     font-weight: 1000;
+    
+}
+
+#follow_us_p{
+    color:#f47169;
 }
 
 

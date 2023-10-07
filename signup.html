@@ -13,8 +13,8 @@
             <a class="btn" id="upper_login" href="index.html">home</a>
         </nav>
     <div class="main">
-    <p class="animated-text motivational">
-      Unlock a World of Possibilities - <b>Create</b> Your Account</p>
+      <p class="animated-text motivational">
+        <b>Let's get started</b> no time to waste</p>
         <form action=""  method = "POST" class = "form" data-aos="flip-left">
             <section>
                  <ion-icon name="log-in-outline"></ion-icon>
@@ -31,7 +31,7 @@
     </div>
     <div class="footer">
       <section>
-        <p>follow us on:</p>
+        <p id="follow_us_p">follow us on:</p>
         <section id="logo_section">
           <ion-icon name="logo-instagram" id="instagram"></ion-icon>
           <ion-icon name="logo-facebook" id="facebook"></ion-icon>
@@ -57,10 +57,10 @@ const header = document.querySelector(".image_container");
 window.addEventListener("scroll", () => {
   if (window.scrollY > 20) {
     nav.style.background = "white";
-    text.style.color = "red"; // Change the background color of the nav bar on scroll
+    text.style.color = "#f47169"; // Change the background color of the nav bar on scroll
   } else {
     nav.style.background = "transparent";
-    text.style.color = "white"; // Reset the background color when scrolling back to the top
+    text.style.color = "#429ef3"; // Reset the background color when scrolling back to the top
   }
 
   //header.style.filter = `blur(${window.scrollY / 100}px)`;

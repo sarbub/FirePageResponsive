@@ -29,14 +29,9 @@
 
 /*=================THIRD ONE=================*/
 
---background-color-third: rgb(255, 255, 255);
---color-primary-third: #86a376;
 --color-white-third:#fff;
---color-accent-third:#e01d1d;
---color-buttons-third:#429ef3;
 --btn-radius:10px;
 --btn-text-size:18px;
---color-firepage-third:#1c1c1c;
 --color-tiktok:#1c1c1c;
 --color-twitter:#1DA1F2;
 --color-instagram:#DD2A7B;
@@ -44,10 +39,12 @@
 --color-yellow:#fff198;  
 --color-disabled:#aaa;
 --color-footer:#f1f1f1;
+--color-accent-third:#f47169;
+--color-buttons-third:#429ef3;
 }
 
 .upper{
-    background-image:url("computer.jpg");
+    background-image:url("contact_us.jpg");
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center center;
@@ -68,18 +65,21 @@ a{
 }
 
 .home{
-    border-radius: 15px;
-    padding:12px 90px;
-    background-color: #fff;
-    color:#1c1c1c;
-    border:none;
+    border-radius:10px;
+    font-size:30px;
+    color:var(--color-white);
+    background-color: var(--color-accent-third);
+    padding:10px 60px;
 }
 
 .phone_number{
-    border-radius: 15px;
-    padding:10px 50px;
-    color:#fff;
-    border:2px solid #FFF;
+    background-color: var(--color-buttons-third);
+    border-radius:10px;
+    border:none;
+    font-size:30px;
+    color:var(--color-white);
+    padding:10px 20px;
+    font-weight: 800px;
 }
 
 button:hover,a:hover{
@@ -143,15 +143,7 @@ form input{
     z-index: 2;
 
 }
-.form_div ion-icon{
-    color:#1c1c1c;
-    font-size:15rem;
-    z-index: 20;
-    margin:auto;
-    padding:30px 10px;
 
-    
-}
 
 /*-----------------------FOOTER SECTION---------------------*/
 
@@ -213,6 +205,7 @@ form input{
     .upper{
         display: flex;
         flex-direction: row;
+        background-position: center -10rem;
     }
 
     .form_div{
@@ -259,7 +252,6 @@ form input{
             <div class="message"></div>
         </div>
         <div class="form_div">
-            <ion-icon name="people"></ion-icon>
             <form action="">
                 <input type="text" placeholder="Name">
                 <input type="text" placeholder="Email">

@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
 
 @keyframes fadeIn {
@@ -26,7 +26,7 @@
     --color-white:#fff;
     --color-buttons-third:#429ef3;
     --color-yellow:#fff19c;
-    --color-red:#fd5234;
+    --color-red:#f47169;
     --color-twitter:#1DA1F2;
     --color-instagram:#DD2A7B;
     --color-facebook:#3B5998;
@@ -40,9 +40,9 @@
 }
 
 body{
-    font-family: 'Poppins', sans-serif;
-    background-image:url("second_pills.jpg");
+    background-image:url("settings.jpg");
     background-position: center center;
+    background-size:cover;
 
 }
 
@@ -56,7 +56,7 @@ a{
 
 
 .motivational{
-    color:var(--color-white);
+    color:var(--color-red);
     font-size:40px;
     font-weight: 800;
     width:80%;
@@ -66,15 +66,18 @@ a{
 
 .motivational b{
     color:var(--color-buttons-third);
+    font-family: 'Poppins', sans-serif;
 }
 
 .logo_text{
     font-size:30px;
-    color:var(--color-white);
+    color:var(--color-buttons-third);
+    font-family: 'Poppins', sans-serif;
 
 }
 
 .blue_btn{
+    font-family: 'Poppins', sans-serif;
     background-color: var(--color-buttons-third);
     border-radius:10px;
     border:none;
@@ -84,13 +87,13 @@ a{
 }
 
 .black_btn{
-    background-color: var(--color-white);
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--color-red);
     border-radius:10px;
     border:none;
     font-size:20px;
-    color:var(--color-buttons-third);
+    color:var(--color-white);
     padding:15px 30px;
-    border:2px solid var(--color-buttons-third)
 }
 
 section{
@@ -102,6 +105,7 @@ section{
 /*===============================NAVIGATION===================*/
 
 .nav {
+    font-family: 'Poppins', sans-serif;
     position: fixed; /* Set the position to fixed */
     display: flex;
     align-items: center;
@@ -170,6 +174,8 @@ section{
 .already_have_account_p{
     font-size:15px;
     color:var(--color-tiktok);
+    font-weight:100 !important;
+    font-family: sans-serif;
 }
 
 
@@ -186,6 +192,7 @@ form ion-icon{
 /*========================FOOTER=======================*/
 
 .footer{
+    font-family:sans-serif;
     background-color: var(--color-footer);
     position:relative;
     top:10px;
@@ -195,6 +202,12 @@ form ion-icon{
     text-align: center;
     justify-content: center;
     margin-top:50px;
+    gap:10px;
+    font-weight: 100 ;
+}
+
+#follow_us_p{
+    color:var(--color-red);
 }
 
 
@@ -250,6 +263,10 @@ ion-icon{
         justify-content: space-around;
 
 
+    }
+
+    .motivational{
+        display:none;
     }
 }
 
