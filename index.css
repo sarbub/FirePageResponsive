@@ -34,14 +34,12 @@
 
     /*=================THIRD ONE=================*/
 
-    --background-color-third: rgb(255, 255, 255);
-    --color-primary-third: #86a376;
+    --color-primary-third: #c480d6;
     --color-white-third:#fff;
     --color-accent-third:#e01d1d;
     --color-buttons-third:#429ef3;
     --btn-radius:10px;
     --btn-text-size:18px;
-    --color-firepage-third:#1c1c1c;
     --color-tiktok:#1c1c1c;
     --color-twitter:#1DA1F2;
     --color-instagram:#DD2A7B;
@@ -49,6 +47,7 @@
     --color-yellow:#fff198;  
     --color-disabled:#aaa;
     --color-footer:#f1f1f1;
+    --color-test:#afafaf;
 }
 
 *{
@@ -58,9 +57,9 @@
 }
 body{
     margin:0;
-    background-image: url("pills.jpg");
+    background-image: url("people_study.jpg");
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center -25rem;
     background-size:cover;
     padding: 0;
     font-family: 'Poppins', sans-serif;
@@ -102,7 +101,7 @@ a{
 
 .logo_text{
     font-size:30px;
-    color:var(--color-white);
+    color:var(--color-buttons-third);
 }
 
 .blue_btn{
@@ -120,35 +119,25 @@ a{
 }
 
 .white_btn{
-    border:2px solid var(--color-white);
     border-radius:10px;
     font-size:10px;
     color:var(--color-white);
+    background-color: var(--color-accent-third);
     padding:10px 20px;
 }
 
 
 
 .motivational_text{
-    font-size:30px;
+    font-size:35px;
     color:var(--color-white);
+    font-weight: 1000;
 }
 
 
 
 /*========================FIRST SECTION=================*/
 
-.big_top_image{
-    background-image: url("pills.jpg");
-    z-index: 0; /* Change the z-index value to 0 or a positive value */
-    position: absolute;
-    background-repeat: no-repeat;
-    width: 100%;
-    min-height: 90vh;
-    max-height: 90vh;
-    background-size: cover;
-    background-position: center center;
-}
 
 .first_section{
     height: 90vh;
@@ -222,6 +211,7 @@ nav{
     top:-20px;
     font-size:120px;
     margin-bottom:20px;
+    color: var(--color-accent-third);
 
 }
 
@@ -261,6 +251,7 @@ nav{
 
 
 @media screen and (min-width:600px){
+
 
     nav{
         justify-content: space-between;
