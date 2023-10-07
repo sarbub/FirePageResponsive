@@ -60,7 +60,6 @@
 
 const nav = document.querySelector(".nav");
 const text = document.querySelector(".logo_text");
-const header = document.querySelector(".big_top_image");
 
 window.addEventListener("scroll", () => {
   if (window.scrollY > 50) {
@@ -71,7 +70,6 @@ window.addEventListener("scroll", () => {
     text.style.color = "white"; // Reset the background color when scrolling back to the top
   }
 
-  header.style.filter = `blur(${window.scrollY / 100}px)`;
 
   // Function to disable screen rotation
 

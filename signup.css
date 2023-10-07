@@ -30,6 +30,7 @@
     --color-twitter:#1DA1F2;
     --color-instagram:#DD2A7B;
     --color-facebook:#3B5998;
+    --color-footer:#f1f1f1;
 }
 
 *{
@@ -185,7 +186,7 @@ form ion-icon{
 /*========================FOOTER=======================*/
 
 .footer{
-    background-color: var(--color-yellow);
+    background-color: var(--color-footer);
     position:relative;
     top:10px;
     height: 13rem;;

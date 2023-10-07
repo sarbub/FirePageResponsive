@@ -43,6 +43,7 @@
 --color-facebook:#3B5998;
 --color-yellow:#fff198;  
 --color-disabled:#aaa;
+--color-footer:#f1f1f1;
 }
 
 .upper{
@@ -103,14 +104,19 @@ button:hover,a:hover{
 }
 form input{
     width:20rem;
+    border-radius: 10px;
+    border:1px solid var(--color-tiktok)
 }
 
 textarea{
     min-height:8rem;
-    min-width:20rem;
-    max-width:20rem;
+    min-width:20.7rem;
+    max-width:20.7rem;
     max-height:8rem;  
     font-size:25px; 
+    outline: none;
+    border:1px solid var(--color-tiktok);
+    border-radius: 10px;
 }
 
 form input{
@@ -120,12 +126,13 @@ form input{
     outline: none;
 }
 
-button{
+#submit{
     height:3rem;
     font-size:25px;
     background-color: #fff;
     color:#1c1c1c;
-    border:2px solid #1c1c1c;
+    border:1px solid #1c1c1c;
+    border-radius: 10px;
 }
 
 .message {
@@ -150,7 +157,7 @@ button{
 
 
 .footer{
-    background-color: var(--color-yellow);
+    background-color: var(--color-footer);
     position:relative;
     top:10px;
     height: 13rem;;
@@ -164,14 +171,6 @@ button{
         font-size:20px;
     }
 
-.footer section{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-    }
-
     #logo_section{
         display: flex;
         flex-direction: row;
@@ -182,10 +181,33 @@ button{
         
     }
 
-    .term_section{
-        display: flex !important;
-        border:2px solid red;
+    #first_footer_section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
+
+    .term_section{
+        flex-direction: column;
+    }
+
+    #twitter{
+    color: var(--color-twitter);
+}
+
+#tiktok{
+    color:var(--color-tiktok)
+}
+
+#instagram{
+    color:var(--color-instagram)
+}
+
+#facebook{
+    color: var(--color-facebook);
+}
+
+
 
 @media screen and (min-width:1000px){
     .upper{
@@ -204,6 +226,15 @@ button{
         align-items: center;
         
     }
+
+    .term_section{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+
+    }
+
+
 
 
     
@@ -233,7 +264,7 @@ button{
                 <input type="text" placeholder="Name">
                 <input type="text" placeholder="Email">
                 <textarea name=""  class="text_area"></textarea>
-                <button type="">submit</button>
+                <button type="" id="submit">submit</button>
             </form>
         </div>
     </div>
